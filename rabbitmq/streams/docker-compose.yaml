@@ -1,0 +1,24 @@
+services:
+  rabbitmq:
+    image: rabbitmq:4-management-alpine
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+      - "5552:5552"
+    environment:
+      - RABBITMQ_SERVER_ADDITIONAL_ERL_ARGS=-rabbitmq_stream advertised_host localhost
+    configs:
+      - source: plugins
+        target: /etc/rabbitmq/enabled_plugins
+    volumes:
+        - ~/.docker-conf/rabbitmq/data/:/var/lib/rabbitmq/
+        - ~/.docker-conf/rabbitmq/log/:/var/log/rabbitmq
+    networks:
+      - queue
+configs:
+  plugins:
+    content: "[rabbitmq_management,rabbitmq_prometheus,rabbitmq_stream,rabbitmq_stream_management]."
+networks:
+  queue:
+    driver: bridge
