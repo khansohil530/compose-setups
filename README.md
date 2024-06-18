@@ -6,7 +6,8 @@
   
 <h2>🧐 Systems Implemented</h2>
 
-- [ ] [RabbitMQ](./rabbitmq)
+- [x] [RabbitMQ](./rabbitmq)
+- [x] [Prometheus](./prometheus)
 
 <h2>🛠️ Installation Steps:</h2>
 
