@@ -8,6 +8,7 @@
 
 - [x] [RabbitMQ](./rabbitmq)
 - [x] [Prometheus](./prometheus)
+- [x] [Grafana](./grafana)
 
 <h2>🛠️ Installation Steps:</h2>
 
