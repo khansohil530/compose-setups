@@ -4,22 +4,28 @@
 
   
   
-<h2>🧐 Systems Implemented</h2>
+<h2>⚙️Systems </h2>
+
+<h3>📨Messaging </h3>
 
 - [x] [RabbitMQ](./rabbitmq)
+----
+<h3>📊Observability </h3>
+
 - [x] [Prometheus](./prometheus)
 - [x] [Grafana](./grafana)
+- [x] [Loki](./loki/README.md)
 
 <h2>🛠️ Installation Steps:</h2>
 
-<p>1. Startup command</p>
+<p>Startup command</p>
 
-```
+```shell
 docker compose up -d
 ```
 
-<p>2. Stopping command</p>
+<p>Stopping command</p>
 
-```
+```shell
 docker compose down
 ```
